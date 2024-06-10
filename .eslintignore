@@ -1,0 +1,6 @@
+data/*
+plugins.js
+js/libs
+/node_modules
+
+js/*
