@@ -719,7 +719,7 @@ function ensureProperExtension(err, files, done, folder, expectedExtension) {
       var fileName = file.substring(0, indexOfExtension);
       var extension = file.substring(indexOfExtension).toLowerCase();
       if (indexOfExtension != -1) {
-        chai.assert.equal(extension, expectedExtension, "The file " + fileName + extension + " should have an extension of " + expectedExtension)
+        chai.assert.equal(extension, expectedExtension, "The file " + fileName + extension + " should have an extension of " + expectedExtension);
       }
     }
   }

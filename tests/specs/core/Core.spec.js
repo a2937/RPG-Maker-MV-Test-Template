@@ -5,9 +5,9 @@ if (typeof require !== "undefined" && typeof module != "undefined") {
   var chai = require("chai");
 }
 
-describe('JsonEx Tests', function () {
+describe("JsonEx Tests", function () {
 
-  it('should keep duplicated array references', function () {
+  it("should keep duplicated array references", function () {
     let array = [1, 2, 3];
     let obj = { a1: array, a2: array };
     array[4] = 5;
@@ -16,7 +16,7 @@ describe('JsonEx Tests', function () {
     chai.expect(obj.a1).to.equal(obj.a2);
   });
 
-  it('should handle circular references correctly', function () {
+  it("should handle circular references correctly", function () {
     let a = {};
     let b = { a };
     a.b = b;
