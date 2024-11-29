@@ -19,15 +19,15 @@
     "updateDialog": "node \"tests/specs/DialogTool.js\" update"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.21",
-    "chai": "^4.3.4",
-    "electron": "^13.1.6",
-    "eslint": "^8.14.0",
-    "floss": "^5.0.1",
-    "image-size": "^1.0.0",
-    "jsdom": "^16.6.0",
-    "sinon": "^12.0.1",
-    "sinon-chai": "^3.7.0",
-    "true-case-path": "^2.2.1"
+    "@types/chai": "4.2.21",
+    "chai": "4.3.4",
+    "electron": "13.1.6",
+    "eslint": "8.14.0",
+    "floss": "5.0.1",
+    "image-size": "1.0.0",
+    "jsdom": "16.6.0",
+    "sinon": "12.0.1",
+    "sinon-chai": "3.7.0",
+    "true-case-path": "2.2.1"
   }
 }
