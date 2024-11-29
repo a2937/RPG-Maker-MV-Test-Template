@@ -10,6 +10,10 @@ if (localPackageJSON.scripts == null)
   localPackageJSON.scripts = []; 
 }
 
+if (localPackageJSON.devDependencies == null) {
+  localPackageJSON.devDependencies = [];
+}
+
 localPackageJSON.scripts.push({ "test": "floss --path \"tests/specs/*/*.spec.js\"" });
 localPackageJSON.scripts.push({ "debug": "floss --path \"tests/specs/*/*.spec.js\" --debug" });
 localPackageJSON.scripts.push({ "prune": "npm prune --production" });
