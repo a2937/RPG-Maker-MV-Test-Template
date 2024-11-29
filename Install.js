@@ -5,6 +5,11 @@ const { spawn } = require("child_process");
 
 const localPackageJSON = JSON.parse(localPackageData); 
 
+if (localPackageJSON.scripts == null)
+{
+  localPackageJSON.scripts = []; 
+}
+
 localPackageJSON.scripts.push({ "test": "floss --path \"tests/specs/*/*.spec.js\"" });
 localPackageJSON.scripts.push({ "debug": "floss --path \"tests/specs/*/*.spec.js\" --debug" });
 localPackageJSON.scripts.push({ "prune": "npm prune --production" });
