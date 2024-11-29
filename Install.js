@@ -32,7 +32,7 @@ localPackageJSON.devDependencies.push({ "jsdom": "16.6.0" });
 localPackageJSON.devDependencies.push({ "sinon-chai": "3.7.0" });
 localPackageJSON.devDependencies.push({ "true-case-path": "2.2.1" });
 
-fs.writeFileSync("package.json", localPackageJSON.toString(),{"encoding":"utf8"});
+fs.writeFileSync("package.json", JSON.stringify(localPackageJSON),{"encoding":"utf8"});
 
 fs.cpSync("./demo/tests", "./tests", { recursive: true });
 fs.cpSync("./demo/@types", "./@types", { recursive: true });
