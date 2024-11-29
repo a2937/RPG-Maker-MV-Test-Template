@@ -10,7 +10,7 @@ and Typescript definition files.
 
 2. Download NodeJS if you have not already. It is used to setup dependencies this template uses. It can be found at it's [homepage](https://nodejs.org/en).
 
-3. Run `npm install` to grab all the recommended dependencies.
+3. Run `node Install.js` to grab all the recommended dependencies and setup the scripts. You must have the `demo` project present. 
 
 4. To automatically run a test, type `npm run debug` and hit enter. This will create a new window where all the tests will show up. Depending on the number of map files and other things, it may take some time to execute.
 
